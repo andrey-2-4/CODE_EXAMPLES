@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FractalPeer/1.0.0": {
+        "runtime": {
+          "FractalPeer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FractalPeer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
