@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>servicePeer</name>
+    </assembly>
+    <members>
+        <member name="T:servicePeer.Controllers.MessagesController">
+            <summary>
+            Класс для работы со списком сообщений.
+            </summary>
+        </member>
+        <member name="F:servicePeer.Controllers.MessagesController.messages">
+            <summary>
+            Список всех сообщений.
+            </summary>
+        </member>
+        <member name="M:servicePeer.Controllers.MessagesController.Get">
+            <summary>
+            Обработчик для получения всего списка сообщений.
+            </summary>
+            <returns> Весь список сообщений.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.MessagesController.Post">
+            <summary>
+            Создание списка сообщений.
+            </summary>
+            <returns> Результат действия.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.MessagesController.Get(System.String,System.String)">
+            <summary>
+            Обработчик для получения списка сообщений по id отправителя и получателя.
+            </summary>
+            <returns> Весь список пользоваетелей.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.MessagesController.GetBySenderEmail(System.String)">
+            <summary>
+            Обработчик для получения списка сообщений по id отправителя.
+            </summary>
+            <returns> Весь список пользоваетелей.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.MessagesController.GetByReceiverEmail(System.String)">
+            <summary>
+            Обработчик для получения списка сообщений по id получателя.
+            </summary>
+            <returns> Весь список пользоваетелей.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.MessagesController.ReadMessages">
+            <summary>
+            Метод для чтения списка сообщений из JSON файла.
+            </summary>
+        </member>
+        <member name="M:servicePeer.Controllers.MessagesController.SaveMessages">
+            <summary>
+            Метод для записи списка сообщений в JSON файл.
+            </summary>
+        </member>
+        <member name="T:servicePeer.Controllers.UsersController">
+            <summary>
+            Класс для работы со списком пользователей.
+            </summary>
+        </member>
+        <member name="F:servicePeer.Controllers.UsersController.users">
+            <summary>
+            Список пользователей.
+            </summary>
+        </member>
+        <member name="P:servicePeer.Controllers.UsersController.UsersCount">
+            <summary>
+            Возвращает кол-во пользователей.
+            </summary>
+        </member>
+        <member name="M:servicePeer.Controllers.UsersController.Get">
+            <summary>
+            Обработчик для получения всего списка пользователей.
+            </summary>
+            <returns> Весь список пользоваетелей.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.UsersController.Get(System.String)">
+            <summary>
+            Обработчик для получения информации о пользователе по его идентификатору.
+            </summary>
+            <returns> Весь список пользоваетелей.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.UsersController.Post">
+            <summary>
+            Создание списка пользователей.
+            </summary>
+            <returns> Результат действия.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.UsersController.Post(System.String,System.String)">
+            <summary>
+            Добавление пользователя.
+            </summary>
+            <returns> Результат действия.</returns>
+        </member>
+        <member name="M:servicePeer.Controllers.UsersController.ReadUsers">
+            <summary>
+            Метод для чтения списка пользователей из JSON файла 
+            </summary>
+        </member>
+        <member name="M:servicePeer.Controllers.UsersController.SaveUsers">
+            <summary>
+            Метод для записи списка пользователей в JSON файл (сортировка по Email по возрастанию)
+            </summary>
+        </member>
+        <member name="T:servicePeer.Models.Letter">
+            <summary>
+            Класс, содержащий информацию о письме.
+            </summary>
+        </member>
+        <member name="P:servicePeer.Models.Letter.Subject">
+            <summary>
+            Тема сообщения.
+            </summary>
+        </member>
+        <member name="P:servicePeer.Models.Letter.Message">
+            <summary>
+            Сообщение.
+            </summary>
+        </member>
+        <member name="P:servicePeer.Models.Letter.SenderId">
+            <summary>
+            ID отправителя.
+            </summary>
+        </member>
+        <member name="P:servicePeer.Models.Letter.ReceiverId">
+            <summary>
+            ID получателя.
+            </summary>
+        </member>
+        <member name="T:servicePeer.Models.User">
+            <summary>
+            Класс, содержащий информацию о пользователе.
+            </summary>
+        </member>
+        <member name="P:servicePeer.Models.User.UserName">
+            <summary>
+            Имя пользователя.
+            </summary>
+        </member>
+        <member name="P:servicePeer.Models.User.Email">
+            <summary>
+            Почтовый адрес пользователя. 
+            </summary>
+        </member>
+        <member name="T:servicePeer.Program">
+            <summary>
+            Основной класс программы.
+            </summary>
+        </member>
+        <member name="M:servicePeer.Program.Main(System.String[])">
+            <summary>
+            Точка входа программы.
+            </summary>
+            <param name="args"> Входные параметры.</param>
+        </member>
+        <member name="M:servicePeer.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Метод создающий IHostBuilder
+            </summary>
+            <param name="args"> Входные параметры.</param>
+            <returns> IHostBuilder</returns>
+        </member>
+        <member name="T:servicePeer.WordGenerator">
+            <summary>
+            Класс для генерации слова.
+            </summary>
+        </member>
+        <member name="M:servicePeer.WordGenerator.GetWord">
+            <summary>
+            Метод для генерации слова.
+            </summary>
+            <returns> Случайное слово.</returns>
+        </member>
+    </members>
+</doc>
